@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Embed Redirector",
+  "author": "bakkouz",
+  "version": "1.0",
+  "description": "Redirects YouTube watch URLs to their embed versions",
+  "permissions": [
+    "webNavigation",
+    "tabs",
+    "scripting",
+    "windows"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+} 
