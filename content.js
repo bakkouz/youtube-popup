@@ -1,6 +1,3 @@
-// This file is no longer needed as we're handling everything in the background script
-// The content script is kept for future use if needed 
-
 // Function to handle video clicks
 function handleVideoClick(event) {
     // Find the closest anchor element
